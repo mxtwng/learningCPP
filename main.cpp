@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "searchingAlgorithms/linearSearch.h"
+#include "searchingAlgorithms/linearSentinalJump.h"
 using namespace std;
 
 
