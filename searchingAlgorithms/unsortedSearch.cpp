@@ -10,9 +10,10 @@ int linearSearch(int arr[], int n, int target) {
 
 int sentinalSearch(int arr[], int n, int target) {
     int i = 0;
-    while (arr[i] != target)
+    while (arr[i] != target && i < n)
         i++;
     if (i < n) return i;
     return -1;
 }
+
 

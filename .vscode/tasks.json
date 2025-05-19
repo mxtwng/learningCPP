@@ -9,7 +9,8 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "main.cpp",                
-                "searchingAlgorithms/linearSearch.cpp",  
+                "searchingAlgorithms/sortedSearch.cpp",  
+                "searchingAlgorithms/unsortedSearch.cpp",  
                 "-o",
                 "${fileDirname}/main" 
             ],

@@ -21,3 +21,4 @@ Chapter 9: Brute force + Backtracking.
 
 Log:
 1. Monday, May 12nd 2025: Created repo/project, finished Chapter 1.
+2. Monday, May 19nd 2025: Added some more sort algorithms, to be continue.
