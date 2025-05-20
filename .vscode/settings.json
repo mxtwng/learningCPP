@@ -1,5 +1,8 @@
 {
     "files.associations": {
         "ostream": "cpp"
-    }
+    },
+    "vscode-pets.position": "panel",
+    "vscode-pets.throwBallWithMouse": true,
+    "vscode-pets.petSize": "small"
 }

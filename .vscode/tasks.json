@@ -11,6 +11,8 @@
                 "main.cpp",                
                 "searchingAlgorithms/sortedSearch.cpp",  
                 "searchingAlgorithms/unsortedSearch.cpp",  
+                "sortingAlgorithms/basicSorting.cpp",
+                "sortingAlgorithms/advancedSorting.cpp",
                 "-o",
                 "${fileDirname}/main" 
             ],
