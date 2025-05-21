@@ -6,7 +6,6 @@
 
 using namespace std;
 
-
 int main() {
     int arr[] = {5, 2, 6, 3 ,13, 0, 1, 5, 8};
     mergeSort(arr, 0, 8);

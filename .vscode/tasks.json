@@ -9,10 +9,18 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "main.cpp",                
+                
                 "searchingAlgorithms/sortedSearch.cpp",  
                 "searchingAlgorithms/unsortedSearch.cpp",  
+
                 "sortingAlgorithms/basicSorting.cpp",
                 "sortingAlgorithms/advancedSorting.cpp",
+
+                "Graph/traversal/traversal.cpp",
+
+                "Graph/shortestPath/weighted.cpp",
+                "Graph/shortestPath/unweighted.cpp",
+                "Graph/shortestPath/allPairs.cpp",
                 "-o",
                 "${fileDirname}/main" 
             ],

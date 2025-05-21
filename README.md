@@ -23,3 +23,4 @@ Log:
 1. Monday, May 12nd 2025: Created repo/project, finished Chapter 1.
 2. Monday, May 19th 2025: Added some more sort algorithms, to be continue.
 3. Tuesday, May 20th 2025: Finished merge, quick, heap, shell sort, learned a little bit more about cross-file usage of function + added alot of graph methods files
+4. Wednesday, May 21st 2025: finished allPairs(floydWarshall & johnson) & weighted (dijkstra & bellmanFord)
