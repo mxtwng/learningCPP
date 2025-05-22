@@ -18,9 +18,11 @@
 
                 "Graph/traversal/traversal.cpp",
 
-                "Graph/shortestPath/weighted.cpp",
-                "Graph/shortestPath/unweighted.cpp",
+                "Graph/shortestPath/shortestPath.cpp",
                 "Graph/shortestPath/allPairs.cpp",
+
+                "Graph/MST/dsu.cpp",
+                "Graph/MST/mst.cpp",
                 "-o",
                 "${fileDirname}/main" 
             ],
