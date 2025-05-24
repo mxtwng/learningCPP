@@ -1,4 +1,5 @@
 #pragma once
+#include <vector>
 
-int dfs(int node, std::vector<std::vector<int>>& adjList, std::vector<int>& visited);
-int bfs(int start, std::vector<std::vector<int>>& adjList);
+void dfs(int node, std::vector<std::vector<int>>& adjList, std::vector<int>& visited);
+void bfs(int start, std::vector<std::vector<int>>& adjList);

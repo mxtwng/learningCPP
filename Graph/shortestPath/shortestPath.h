@@ -1,10 +1,10 @@
 #pragma once
+#include <vector>
 
-
-int dijkstra(int start, std::vector<std::vector<std::pair<int, int>>>& adjList);
+void dijkstra(int start, std::vector<std::vector<std::pair<int, int>>>& adjList);
 int bellmanFord(int start, std::vector<std::vector<std::pair<int, int>>>& adjList);
 int dials(int start, std::vector<std::vector<std::pair<int, int>>>& adjList, int maxW);
-int zeroOneBfs(int start, const std::vector<std::vector<std::pair<int, int>>>& adjList);
+int zeroOneBfs(int start, std::vector<std::vector<std::pair<int, int>>>& adjList);
 
 
 void floydWarshall(int V, std::vector<std::vector<std::pair<int, int>>>& adjList);

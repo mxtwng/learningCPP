@@ -3,7 +3,7 @@
 #include <vector>
 #include <climits>
 
-int dijkstra(int start, std::vector<std::vector<std::pair<int, int>>>& adjList) {
+void dijkstra(int start, std::vector<std::vector<std::pair<int, int>>>& adjList) {
     std::vector<int> distance(adjList.size(), INT_MAX);
     std::priority_queue< std::pair<int, int>, std::vector<std::pair<int, int>>, std::greater<> > pq;
 

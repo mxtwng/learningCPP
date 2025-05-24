@@ -21,6 +21,8 @@ Chapter 8: Graph's algorithms. <br>
 Chapter 9: Brute force + Backtracking.
 
 !!This also includes studying from USACO and VNOI roadmap (reminder to checkout codedream)
+!!bro we can code together on ide.usaco.guide
+!!exercises: hackerank, leetcode, codeforces, cses, 
 
 Log:
 1. Monday, May 12nd 2025: Created repo/project, finished Chapter 1.
