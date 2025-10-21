@@ -1,0 +1,40 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int n, m;
+    cin >> n >> m;
+
+    vector<long long> travel(n);
+    vector<vector<long long>> arrivals(n);
+
+    for (int i = 0; i < n; i++) {
+        int t, k;
+        cin >> t >> k;
+        travel[i] = t;
+        arrivals[i].resize(k);
+        for (int j = 0; j < k; j++)
+            cin >> arrivals[i][j];
+    }
+
+    // Compute prefix distance from start
+    vector<long long> dist(n + 1, 0);
+    for (int i = 1; i <= n; i++)
+        dist[i] = dist[i - 1] + travel[i - 1];
+
+    vector<long long> b;
+    for (int i = 0; i < n; i++) {
+        for (auto a : arrivals[i])
+            b.push_back(a - dist[i]); // effective availability time
+    }
+
+    sort(b.begin(), b.end());
+
+    long long start_time = max(0LL, b[m - 1]);
+    long long finish_time = start_time + dist[n];
+
+    cout << finish_time << "\n";
+}

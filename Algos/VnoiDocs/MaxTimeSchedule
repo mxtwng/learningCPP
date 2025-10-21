@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    ios::sync_with_stdio(0); cin.tie(NULL);
+    int n; cin >> n;
+    vector<pair<int, int>> periods(n); //out in
+    for (auto& p: periods) cin >> p.second >> p.first;
+    
+    sort(periods.begin(), periods.end());
+    
+    vector<int> dp(n+1, 0);
+    for (int i = 1; i <= n; i++) {
+        int s = periods[i-1].second, e = periods[i-1].first;
+        int length = e - s;
+        
+        int left = 0, right = n - 1, prev = 0;
+        while (left <= right) {
+            int mid = (left + right)/2;
+            
+            if (periods[mid].first <= s) {
+                prev = mid + 1;
+                left = mid + 1;
+            } else
+                right = mid - 1;
+        }
+        
+        dp[i] = max(dp[i-1], dp[prev] + length);
+    }
+    
+    cout << dp[n];
+}
